@@ -6,7 +6,7 @@ import javax.validation.constraints.Size;
 @Entity
 public class Skill extends AbstractEntity {
 
-    @Size(max = 500, message = "This exceeds the maximum character limit.")
+    @Size(max = 255, message = "This exceeds the maximum character limit.")
     private String description;
 
     public Skill(String description) {
